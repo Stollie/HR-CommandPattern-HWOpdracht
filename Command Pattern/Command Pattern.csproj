@@ -48,6 +48,7 @@
     <Compile Include="Cronjob.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Commands\MSSQLBackupCommand.cs" />
+    <Compile Include="FullBackupCommand.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\SQLBackupCommand.cs" />
