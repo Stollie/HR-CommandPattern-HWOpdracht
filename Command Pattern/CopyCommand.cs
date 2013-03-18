@@ -7,5 +7,7 @@ namespace Command_Pattern
 {
     public class CopyCommand : ICommand
     {
+        public void execute() { }
+        public void undo() { }       
     }
 }

@@ -7,5 +7,7 @@ namespace Command_Pattern
 {
     public class SendMailCommand : ICommand
     {
+        public void execute() { }
+        public void undo() { }
     }
 }

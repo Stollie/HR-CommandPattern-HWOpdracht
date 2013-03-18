@@ -8,7 +8,7 @@ namespace Command_Pattern
     public class MSSQLBackupCommand : ICommand
     {
 
-        void MSSQLBackupCommand(string username, string password, string host, string databasename)
+        public MSSQLBackupCommand(string username, string password, string host, string databasename)
         {
 
         }

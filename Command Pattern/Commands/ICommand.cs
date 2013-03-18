@@ -7,7 +7,7 @@ namespace Command_Pattern
 {
     public interface ICommand
     {
-        public void execute();
-        public void undo();
+        void execute();
+        void undo();
     }
 }

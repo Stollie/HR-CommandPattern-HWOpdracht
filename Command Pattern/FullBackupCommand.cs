@@ -9,7 +9,7 @@ namespace Command_Pattern
     {
         private List<ICommand> commands;
 
-        void FullBackupCommand(List<ICommand> cmmnds)
+        public FullBackupCommand(List<ICommand> cmmnds)
         {
             commands = cmmnds;
         }
@@ -21,5 +21,7 @@ namespace Command_Pattern
                 command.execute();
             }
         }
+
+        public void undo() { }
     }
 }

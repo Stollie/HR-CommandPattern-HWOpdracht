@@ -9,13 +9,14 @@ namespace Command_Pattern
     {
         private ICommand command;
 
-        void Worker(ICommand cmmnd)
+        public Worker(int nr)
         {
-            command = cmmnd;
+            Console.WriteLine("Worker "+nr+" gaat werken");
         }
 
-        public void execute()
+        public void execute(ICommand cmmnd)
         {
+            command = cmmnd;
             command.execute();
         }
     }
