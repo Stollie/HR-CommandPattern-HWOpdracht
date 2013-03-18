@@ -4,13 +4,16 @@
     <Position X="6.958" Y="1.521" Height="0.302" Width="1.325" />
   </Comment>
   <Comment CommentText="Reciever">
-    <Position X="6.385" Y="5.542" Height="0.333" Width="1.565" />
+    <Position X="5.218" Y="5.73" Height="0.333" Width="1.565" />
   </Comment>
   <Comment CommentText="Invoker">
     <Position X="2.438" Y="2.948" Height="0.354" Width="1.148" />
   </Comment>
   <Comment CommentText="Client">
     <Position X="5.271" Y="0.5" Height="0.344" Width="1.335" />
+  </Comment>
+  <Comment CommentText="Macro">
+    <Position X="10.438" Y="5.344" Height="0.375" Width="0.835" />
   </Comment>
   <Class Name="Command_Pattern.Program" Collapsed="true">
     <Position X="1.25" Y="0.5" Width="1.5" />
@@ -43,7 +46,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Command_Pattern.Worker">
-    <Position X="7.25" Y="6" Width="1.5" />
+    <Position X="5.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Worker.cs</FileName>
@@ -65,10 +68,18 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Command_Pattern.CopyCommand">
-    <Position X="10" Y="5.25" Width="1.5" />
+    <Position X="11.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CopyCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Command_Pattern.FullBackupCommand">
+    <Position X="8.25" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FullBackupCommand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
