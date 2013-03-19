@@ -8,6 +8,6 @@ namespace Command_Pattern
     public interface ICommand
     {
         void execute();
-        void undo();
+        //void undo();
     }
 }

@@ -7,16 +7,26 @@ namespace Command_Pattern
 {
     public class Worker
     {
-        private ICommand command;
+        private Queue<ICommand> _commands;
 
-        public Worker(int nr)
+        public Worker()
         {
-            Console.WriteLine("Worker "+nr+" gaat werken");
+            _commands = new Queue<ICommand>();
         }
 
-        public void execute(ICommand cmmnd)
+        public void addCommand(ICommand command)
         {
-            command = cmmnd;
+            _commands.Enqueue(command);
+        }
+
+        /*public ICommand getCommand()
+        {
+            return 
+        }*/
+
+        public void execute()
+        {
+            ICommand command = _commands.Dequeue();
             command.execute();
         }
     }

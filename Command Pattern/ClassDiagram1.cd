@@ -1,92 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Commands">
-    <Position X="8.843" Y="0.886" Height="0.302" Width="1.325" />
+    <Position X="9.499" Y="0.668" Height="0.291" Width="1.523" />
   </Comment>
   <Comment CommentText="Reciever">
-    <Position X="5.156" Y="5.573" Height="0.333" Width="1.565" />
+    <Position X="5.25" Y="3.385" Height="0.291" Width="1.492" />
   </Comment>
   <Comment CommentText="Invoker">
-    <Position X="4.803" Y="3.094" Height="0.354" Width="1.148" />
+    <Position X="5.772" Y="0.678" Height="0.291" Width="1.492" />
   </Comment>
   <Comment CommentText="Client">
-    <Position X="4.688" Y="0.844" Height="0.344" Width="1.335" />
+    <Position X="2.605" Y="0.604" Height="0.291" Width="1.45" />
   </Comment>
-  <Comment CommentText="Macro command">
-    <Position X="10.51" Y="5.687" Height="0.291" Width="1.231" />
+  <Comment CommentText="execute() {&#xD;&#xA;  _manager.backup();&#xD;&#xA;   _manager.copyToDisk();&#xD;&#xA;}">
+    <Position X="10.354" Y="4.594" Height="1.344" Width="2.502" />
   </Comment>
   <Class Name="Command_Pattern.Program">
     <Position X="2.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAQAAAAAABAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAgAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Command_Pattern.Cronjob">
-    <Position X="4.75" Y="1.25" Width="1.5" />
+  <Class Name="Command_Pattern.BackupManager" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cronjob.cs</FileName>
+      <HashCode>AAQAAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAIARCAAAAA=</HashCode>
+      <FileName>Commands\BackupManager.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="Command_Pattern.MYSQLBackupCommand" BaseTypeListCollapsed="true">
-    <Position X="9.75" Y="3" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAIARAAAAAA=</HashCode>
-      <FileName>Commands\MYSQLBackupCommand.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Command_Pattern.MSSQLBackupCommand" BaseTypeListCollapsed="true">
-    <Position X="7.5" Y="3" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Commands\MSSQLBackupCommand.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Command_Pattern.Worker">
-    <Position X="5.25" Y="6" Width="1.5" />
+    <Position X="5.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Command_Pattern.CommandQueue">
-    <Position X="5" Y="3.5" Width="1.5" />
+  <Class Name="Command_Pattern.SendMailCommand" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
-      <FileName>CommandQueue.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Command_Pattern.SendMailCommand">
-    <Position X="11.75" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>SendMailCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\SendMailCommand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Command_Pattern.CopyCommand">
-    <Position X="11.75" Y="4.5" Width="1.5" />
+  <Class Name="Command_Pattern.CopyCommand" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CopyCommand.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="Command_Pattern.FullBackupCommand">
-    <Position X="10" Y="6.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAEAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>FullBackupCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CopyCommand.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Command_Pattern.ICommand">
-    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Position X="9.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Commands\ICommand.cs</FileName>
     </TypeIdentifier>
   </Interface>

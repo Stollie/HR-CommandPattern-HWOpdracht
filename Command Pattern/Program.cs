@@ -7,19 +7,19 @@ namespace Command_Pattern
 {
     class Program
     {
-        private static CommandQueue queue;
-        private static Worker worker;
+        private static Worker _worker;
+        private static BackupManager _backupManager;
 
         static void Main(string[] args)
         {
-            queue = new CommandQueue();
-            queue.addCommand(new MYSQLBackupCommand("Pietje", "sa35a5r3dg", "localhost", "demo 346"));
-            queue.addCommand(new MYSQLBackupCommand("Pietje", "sa35a5r3dg", "localhost", "demo 243"));
+            _backupManager = new BackupManager("Pietje", "sa35a5r3dg", "localhost", "demo 346");
 
+            _worker = new Worker();
+            _worker.addCommand(new CopyCommand(_backupManager));
+            _worker.addCommand(new SendMailCommand(_backupManager));
 
-            worker = new Worker(1);
-
-            worker.execute(queue.getCommand());
+            _worker.execute();
+            _worker.execute();
 
             // Even wachten
             Console.ReadLine();
