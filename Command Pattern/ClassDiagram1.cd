@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Comment CommentText="Commands">
-    <Position X="9.499" Y="0.668" Height="0.291" Width="1.523" />
+    <Position X="8.853" Y="2.741" Height="0.291" Width="1.523" />
   </Comment>
   <Comment CommentText="Reciever">
-    <Position X="5.25" Y="3.385" Height="0.291" Width="1.492" />
+    <Position X="4.26" Y="2.927" Height="0.291" Width="1.492" />
   </Comment>
   <Comment CommentText="Invoker">
-    <Position X="5.772" Y="0.678" Height="0.291" Width="1.492" />
+    <Position X="5.512" Y="0.521" Height="0.291" Width="1.492" />
   </Comment>
   <Comment CommentText="Client">
-    <Position X="2.605" Y="0.604" Height="0.291" Width="1.45" />
+    <Position X="2.542" Y="0.5" Height="0.291" Width="1.45" />
   </Comment>
   <Comment CommentText="execute() {&#xD;&#xA;  _manager.backup();&#xD;&#xA;   _manager.copyToDisk();&#xD;&#xA;}">
-    <Position X="10.354" Y="4.594" Height="1.344" Width="2.502" />
+    <Position X="8.572" Y="5.844" Height="1.344" Width="1.637" />
   </Comment>
   <Class Name="Command_Pattern.Program">
     <Position X="2.5" Y="1" Width="1.5" />
@@ -21,42 +21,65 @@
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAgAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_backupManager" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Command_Pattern.BackupManager" BaseTypeListCollapsed="true">
-    <Position X="5.25" Y="3.75" Width="1.5" />
+    <Position X="4.25" Y="3.25" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAQAAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAIARCAAAAA=</HashCode>
-      <FileName>Commands\BackupManager.cs</FileName>
+      <HashCode>AQQAAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAIARCAAAAA=</HashCode>
+      <FileName>BackupManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Command_Pattern.Worker">
-    <Position X="5.75" Y="1" Width="1.5" />
+    <Position X="5.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Worker.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_commands" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Command_Pattern.SendMailCommand" BaseTypeListCollapsed="true">
-    <Position X="8.25" Y="2.75" Width="1.75" />
+    <Position X="7.25" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Commands\SendMailCommand.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_manager" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Command_Pattern.CopyCommand" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="2.75" Width="2" />
+    <Position X="9" Y="4.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Commands\CopyCommand.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_manager" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Command_Pattern.SendByFTPCommand">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\SendByFTPCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_manager" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Command_Pattern.ICommand">
-    <Position X="9.5" Y="1" Width="1.5" />
+    <Position X="8.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Commands\ICommand.cs</FileName>

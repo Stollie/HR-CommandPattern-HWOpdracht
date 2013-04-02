@@ -19,13 +19,10 @@ namespace Command_Pattern
             _commands.Enqueue(command);
         }
 
-        /*public ICommand getCommand()
-        {
-            return 
-        }*/
 
         public void execute()
         {
+            // Haal het laaste item uit de queue
             ICommand command = _commands.Dequeue();
             command.execute();
         }

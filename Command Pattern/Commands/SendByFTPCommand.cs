@@ -5,18 +5,18 @@ using System.Text;
 
 namespace Command_Pattern
 {
-    public class SendMailCommand : ICommand
+    public class SendByFTPCommand : ICommand
     {
         private BackupManager _manager;
 
-        public SendMailCommand(BackupManager manager)
+        public SendByFTPCommand(BackupManager manager)
         {
             _manager = manager;
         }
         public void execute()
         {
             _manager.backup();
-            _manager.sendMail();
+            _manager.copyToDisk();
         }
     }
 }

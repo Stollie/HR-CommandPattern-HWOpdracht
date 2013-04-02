@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\CopyCommand.cs" />
-    <Compile Include="Cronjob.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Commands\BackupManager.cs" />
+    <Compile Include="BackupManager.cs" />
     <Compile Include="Commands\SendMailCommand.cs" />
+    <Compile Include="Commands\SendByFTPCommand.cs" />
     <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
